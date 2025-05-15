@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire de frais - WebSecureTech</title>
+</head>
+<body>
+    <h1>Formulaire de frais de déplacement</h1>
+    <form action="/notedefrais" method="POST">
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date_deplacement">Date de déplacement :</label><br>
+        <input type="date" id="date_deplacement" name="date_deplacement" required><br><br>
+
+        <label for="lieu">Lieu :</label><br>
+        <input type="text" id="lieu" name="lieu" required><br><br>
+
+        <label for="distance">Distance (en km) :</label><br>
+        <input type="number" id="distance" name="distance" required><br><br>
+
+        <label for="type_vehicule">Type de véhicule :</label><br>
+        <select id="type_vehicule" name="type_vehicule" required>
+            <option value="personne">Personnelle</option>
+            <option value="entreprise">Entreprise</option>
+        </select><br><br>
+
+        <label for="repas">Repas :</label><br>
+        <select id="repas" name="repas" required>
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+        </select><br><br>
+
+        <label for="rgpd">
+            <input type="checkbox" id="rgpd" name="rgpd" required> J'accepte la politique de confidentialité et la RGPD.
+        </label><br><br>
+
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
